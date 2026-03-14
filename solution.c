@@ -18,15 +18,14 @@ int main() {
         scanf("%d", &set2[i]);
     }
 
-
-// My Code:
+    // My Code
     for(i = 0; i < n1; i++) {
         for(j = 0; j < n2; j++) {
             if(set1[i] == set2[j]) {
                 
                 int already_in = 0;
-                for(k = 0; k < count; k++) { 
-                    if(intersection[k] ==      set1[i]) {
+                for(k = 0; k < count; k++) {
+                    if(intersection[k] == set1[i]) {
                         already_in = 1;
                         break;
                     }
@@ -40,8 +39,6 @@ int main() {
         }
     }
 
-    
-    
     for(i = 0; i < count; i++) {
         printf("%d ", intersection[i]);
     }
